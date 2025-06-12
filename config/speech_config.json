@@ -1,0 +1,47 @@
+{
+    "voice_profiles": {
+        "default": {
+            "engine": "pyttsx3",
+            "language": "en-US",
+            "gender": "neutral",
+            "speed": 1.0,
+            "pitch": 1.0,
+            "volume": 1.0,
+            "settings": {}
+        },
+        "assistant": {
+            "engine": "elevenlabs",
+            "language": "en-US",
+            "gender": "female",
+            "speed": 1.1,
+            "pitch": 1.0,
+            "volume": 1.0,
+            "settings": {
+                "voice_id": "",
+                "model": "eleven_monolingual_v1"
+            }
+        },
+        "natural": {
+            "engine": "coqui",
+            "language": "en-US",
+            "gender": "female",
+            "speed": 1.0,
+            "pitch": 1.0,
+            "volume": 1.0,
+            "settings": {
+                "model_name": "tts_models/en/ljspeech/tacotron2-DDC"
+            }
+        }
+    },
+    "speech_recognition": {
+        "default_engine": "whisper",
+        "vad_aggressiveness": 3,
+        "sample_rate": 16000,
+        "frame_duration": 30,
+        "timeout": 5.0
+    },
+    "audio": {
+        "output_device": null,
+        "input_device": null
+    }
+}
